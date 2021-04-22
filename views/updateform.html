@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/css/styling.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/public/js/javascript.js"></script>
+
+    <title>First Choice Health</title>
+</head>
+<body>
+<div id="wrap">
+    <div id="main">
+        <div class="top-container" style="background:#ffffff">
+            <img id="logo" src="/images/Logo.png" alt="logo">
+            <a href="https://www.instagram.com/kennesawstateuniversity/"><i class="fab fa-instagram" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <a href="https://twitter.com/kennesawstate"><i class="fab fa-twitter" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <a href="https://www.facebook.com/KennesawStateUniversity"><i class="fab fa-facebook" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <button id="myBtn" data-toggle="modal" data-target="#myModal" style="color: #4d4d4d">Client Login</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Client Login</h4>
+                        </div>
+                        <div class="modal-body">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Login</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Register</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/contact" id="tabs" style="color: #4d4d4d; padding-right:50px">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #4d4d4d; padding-right:50px">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/patientportal" style="text-decoration: none">Patient Portal</a>
+                    <a href="/appointment" style="text-decoration: none">Request Appointment</a>
+                    <a href="/videos" style="text-decoration: none">Helpful Videos</a>
+                </div>
+            </div>
+            <a href="/about" id="tabs" style="color: #4d4d4d; padding-right:50px">About</a>
+            <a href="/" id="tabs" style="color: #4d4d4d; padding-right:50px">Home</a>
+        </div>
+        <div class="content" style="text-align: center; padding: 10px" id="content">
+            <br>
+            <div class="inner-layer">
+                <div class ="container">
+                    <div class ="row no-margin">
+                        <div class="col-sm-10" style="padding-left: 200px">
+                            <div class ="content">
+                                <h1>Patient Update Form</h1>
+                                <p>Please fill out the form below to update your patient information. If your information doesn't need updated, please go back to the homepage.</p>
+                            </div>
+                        </div>
+                    <div class="col-sm-12" style="padding-left: 150px; padding-right: 150px">
+                        <div class ="form-data">
+                            <div class = "form-head">
+                            </div>
+                            <div class = "form-body">
+                                <div class="row form-row">
+                                    <h3>Personal Information</h3>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "First Name" class="form-control">
+                                   </div>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "Last Name" class="form-control">
+                                </div>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "Phone" class="form-control">
+                                </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "DOB (mm/dd/yyy)" class="form-control">
+                                   </div>
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "SSN (000-00-0000)" class="form-control">
+                                </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "Address" class="form-control">
+                                   </div>
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "City/State/Zip" class="form-control">
+                                </div>
+                                </div>
+                                <br>
+                                <div class="row form-row">
+                                    <h3>In Case of Emergency</h3>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "Contact Full Name" class="form-control">
+                                   </div>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "Relationship" class="form-control">
+                                </div>
+                                    <div class="col-sm-4">
+                                    <input type="text" placeholder = "Phone" class="form-control">
+                                </div>
+                                </div>
+                                <div class="row form-row">
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "Address" class="form-control">
+                                   </div>
+                                    <div class="col-sm-6">
+                                    <input type="text" placeholder = "City/State/Zip" class="form-control">
+                                </div>
+                                </div>
+                                <div class="row form-row">
+                                        <button class= "btn btn-appointment" style="font-size:18px; float:right; background-color: #ffd633">Update</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <button class="open-button" onclick="openForm()"><i class="fas fa-comment-dots" style="font-size:45px;"></i></button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h2>Message/Chat</h2>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div> -->
+    </div>
+</div>
+
+
+<div id="footer">
+    <h7>1000 Chastain Rd. | Kennesaw, GA 30144 | (470) 578-6000</h7>
+    <br>
+    <h7<i class="far fa-copyright" style="padding: 5px"></i> First Choice Health | All rights reserved</h6>
+</div>
+
+
+</body>
+</html>

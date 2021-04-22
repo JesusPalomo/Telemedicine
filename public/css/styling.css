@@ -1,0 +1,143 @@
+body {
+    height: 900px;
+    background: #f2f2f2;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+#header {
+  padding: 25px;
+  background: white;
+  color: #ffffff;
+}
+
+#footer {
+    position: relative;
+    margin-top: -100px;
+    max-height: 500px;
+    clear: both;
+    background: #7db0d1;
+    text-align: center;
+    line-height: 4;
+    font-family: Arial;
+}
+
+#tabs {
+  float: right;
+  text-decoration: none;
+  text-align: right;
+  font-family: arial;
+    padding-top: 125px;
+  font-size: 18px;
+}
+
+#myBtn {
+  float: right;
+  text-decoration: none;
+  text-align: right;
+    border: none;
+    background: none;
+  font-family: arial;
+    padding-top: 125px;
+  font-size: 18px;
+}
+
+#logo {
+    padding: 0;
+    margin: 0 auto;
+    max-height: 25%;
+    max-width: 25%;
+}
+
+#covid {
+    padding: 0;
+    float: right;
+    margin: 0 auto;
+    max-height: 45%;
+    max-width: 45%;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dropbtn{
+     float: right;
+  text-decoration: none;
+  text-align: right;
+    border: none;
+    background: none;
+  font-family: arial;
+    padding-top: 123px;
+  font-size: 18px;
+}
+
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+    float: right;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: #4d4d4d;
+  padding: 12px 16px;
+  text-decoration: none;
+    font-family: arial;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #7db0d1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

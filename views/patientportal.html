@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/css/styling.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/public/js/javascript.js"></script>
+
+    <title>First Choice Health</title>
+</head>
+<body>
+<div id="wrap">
+    <div id="main">
+        <div class="top-container" style="background:#ffffff">
+            <img id="logo" src="/images/Logo.png" alt="logo">
+            <a href="https://www.instagram.com/kennesawstateuniversity/"><i class="fab fa-instagram" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <a href="https://twitter.com/kennesawstate"><i class="fab fa-twitter" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <a href="https://www.facebook.com/KennesawStateUniversity"><i class="fab fa-facebook" style="font-size:35px; color: #7db0d1; float:right; padding:10px"></i></a>
+            <button id="myBtn" data-toggle="modal" data-target="#myModal" style="color: #4d4d4d">Client Login</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Client Login</h4>
+                        </div>
+                        <div class="modal-body">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Login</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Register</button>
+                            <button type="button" id="submit" class="btn btn-info btn-md">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/contact" id="tabs" style="color: #4d4d4d; padding-right:50px">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn" style="color: #4d4d4d; padding-right:50px">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/patientportal" style="text-decoration: none">Patient Portal</a>
+                    <a href="/appointment" style="text-decoration: none">Request Appointment</a>
+                    <a href="/videos" style="text-decoration: none">Helpful Videos</a>
+                </div>
+            </div>
+            <a href="/about" id="tabs" style="color: #4d4d4d; padding-right:50px">About</a>
+            <a href="/" id="tabs" style="color: #4d4d4d; padding-right:50px">Home</a>
+        </div>
+        <div class="content" style="text-align: center; padding: 10px" id="content">
+            <h2>Welcome to our Patient Portal!</h2>
+            <h4>In this section, you can view your account information. If the information on the screen is incorrect, please fill out our patient update form found in the link below.</h4>
+            <br>
+            <div class="row">
+              <div class="column">
+                <i class="fas fa-user-alt"style="font-size:100px; color: #7db0d1;"></i>
+                  <br>
+                  <br>
+                  <h3>Personal Information</h3>
+                  <label>First Name:</label>
+                  <br>
+                  <label>Last Name:</label>
+                  <br>
+                  <label>Address:</label>
+                  <br>
+                  <label>City/State/Zip:</label>
+                  <br>
+                  <h3>In Case of Emergency</h3>
+                  <label>Contact Full Name:</label>
+                  <br>
+                  <label>Relationship:</label>
+                  <br>
+                  <label>Phone:</label>
+              </div>
+              <div class="column">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <label>SSN:</label>
+                  <br>
+                  <label>DOB:</label>
+                  <br>
+                  <label>Phone:</label>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <label>Address:</label>
+                  <br>
+                  <label>City/State/Zip:</label>
+              </div>
+                <div class="column">
+                    <button type="button" class="btn" style="font-size:15px; background-color: #ffd633" onclick="document.location='/updateform'">Patient Update Form</button>
+                  <br>
+                </div>
+        </div>
+        </div>
+
+        <!-- <button class="open-button" onclick="openForm()"><i class="fas fa-comment-dots" style="font-size:45px;"></i></button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h2>Message/Chat</h2>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div> -->
+    </div>
+</div>
+
+
+<div id="footer">
+    <h7>1000 Chastain Rd. | Kennesaw, GA 30144 | (470) 578-6000</h7>
+    <br>
+    <h7<i class="far fa-copyright" style="padding: 5px"></i> First Choice Health | All rights reserved</h6>
+</div>
+
+
+</body>
+</html>
